@@ -100,12 +100,15 @@ _data = {
 }
 
 [node name="player" type="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
 texture_filter = 1
 script = ExtResource("1_sf1yq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(126, 59)
+position = Vector2(124, 60)
 texture = ExtResource("1_p305f")
+offset = Vector2(2.08165e-12, -8)
 hframes = 4
 vframes = 7
 

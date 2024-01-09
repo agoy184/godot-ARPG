@@ -1,2 +1,3 @@
 res://scenes/world.tscn
 res://player/player.tscn
+res://scenes/follow_cam.gd

@@ -3,6 +3,8 @@ extends CharacterBody2D
 @export var speed: int = 35
 @onready var animations = $AnimationPlayer
 
+var currentHealth: int = 3
+
 func handleInput():
 	var moveDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = moveDirection*speed
@@ -22,3 +24,8 @@ func _physics_process(delta):
 	handleInput()
 	move_and_slide()
 	updateAnimation()
+
+func _on_hurt_box_area_entered(area):
+	if area.name == "hitBox":
+		currentHealth -= 1
+		print_debug(currentHealth)

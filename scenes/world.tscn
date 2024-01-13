@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cs2cekxriwvxo"]
+[gd_scene load_steps=11 format=3 uid="uid://cs2cekxriwvxo"]
 
 [ext_resource type="PackedScene" uid="uid://b62mdt5xvi07m" path="res://player/player.tscn" id="1_wqv24"]
 [ext_resource type="Texture2D" uid="uid://druc47rvi733a" path="res://art/TilesetFloor.png" id="2_ixxy3"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cvwkmufpq38ib" path="res://art/animatedFlower.png" id="4_ea7dc"]
 [ext_resource type="Script" path="res://scenes/follow_cam.gd" id="5_7ffor"]
 [ext_resource type="PackedScene" uid="uid://d35nd0war33i7" path="res://enemies/slime.tscn" id="6_3580v"]
-[ext_resource type="Script" path="res://enemies/slime.gd" id="7_voga1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndxrg"]
 texture = ExtResource("2_ixxy3")
@@ -2900,8 +2899,10 @@ layer_2/y_sort_enabled = true
 layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(131076, 1, 0)
 
-[node name="player" parent="TileMap" instance=ExtResource("1_wqv24")]
+[node name="player" parent="TileMap" groups=["Player"] instance=ExtResource("1_wqv24")]
 position = Vector2(-30, -6)
+collision_layer = 3
+collision_mask = 3
 
 [node name="follow_cam" type="Camera2D" parent="TileMap/player" node_paths=PackedStringArray("tilemap")]
 position = Vector2(152, 67)
@@ -2912,10 +2913,11 @@ limit_bottom = 280
 script = ExtResource("5_7ffor")
 tilemap = NodePath("../..")
 
-[node name="slime" parent="." node_paths=PackedStringArray("endPoint") instance=ExtResource("6_3580v")]
-position = Vector2(118, 56)
-script = ExtResource("7_voga1")
+[node name="slime" parent="." node_paths=PackedStringArray("endPoint") groups=["Enemy"] instance=ExtResource("6_3580v")]
+position = Vector2(152, 72)
 endPoint = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="slime"]
 position = Vector2(26, 24)
+
+[node name="Node" type="Node" parent="."]

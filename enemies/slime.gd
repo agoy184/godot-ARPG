@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 var startPosition
 var endPosition
-
+var player = null
+var player_chase = false
 @export var speed = 20
 @export var limit = 0.5
 @export var endPoint: Marker2D
@@ -10,7 +11,7 @@ var endPosition
 
 func _ready():
 	startPosition = position
-	# If you want to go to specific point
+	# If you want to g
 	#endPosition = startPosition + Vector2(0, 3*16)
 	endPosition = endPoint.global_position
 	
@@ -31,8 +32,22 @@ func updateAnimation():
 		animationString = "walkDown"
 	animations.play(animationString)
 
+func playerChase():
+	var moveDirection = player.position - position
+	
 func _physics_process(delta):
-	updateVelocity()
+	if (player == null):
+		updateVelocity()
+	else:
+		playerChase()
 	move_and_slide()
 	updateAnimation()
 	
+
+func _on_detection_area_body_entered(body):
+	player = body
+	player_chase = true
+	
+func _on_detection_area_body_exited(body):
+	player = null
+	player_chase = false

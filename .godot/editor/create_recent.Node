@@ -1,7 +1,9 @@
+CollisionShape2D
+Area2D
+Node
 Marker2D
 AnimatedSprite2D
 CharacterBody2D
 Camera2D
-CollisionShape2D
 TileMap
 AnimationPlayer

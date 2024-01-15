@@ -1,15 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705005756
+::res://::1705298808
 icon.svg::CompressedTexture2D::7294379042897127166::1704598921::1704670977::1::::<><>::
-::res://art/::1705008555
+::res://art/::1705008556
 animatedFlower.png::CompressedTexture2D::6292853052723797269::1704767215::1704767215::1::::<><>::
 player sprites.png::CompressedTexture2D::1422976905277113941::1704669392::1704670977::1::::<><>::
 Slime.png::CompressedTexture2D::1671545072437499954::1705008555::1705008556::1::::<><>::
 TilesetFloor.png::CompressedTexture2D::8393934877990829448::1704751981::1704751985::1::::<><>::
 TilesetNature.png::CompressedTexture2D::2043259905234106240::1704751981::1704751985::1::::<><>::
-::res://player/::1705005765
-player.gd::GDScript::-1::1704698146::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4618748042487838624::1705005765::0::1::::<><>::uid://ujkhsk5kd8n6::::res://art/player sprites.png<>res://player/player.gd
-::res://scenes/::1705005765
+::res://enemies/::1705114158
+slime.gd::GDScript::-1::1705114026::0::1::::<>CharacterBody2D<>::
+slime.tscn::PackedScene::9187277030946983568::1705114158::0::1::::<><>::res://enemies/slime.gd<>uid://x2ydrhkwrwwg::::res://art/Slime.png
+::res://player/::1705114158
+player.gd::GDScript::-1::1705111345::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4618748042487838624::1705114158::0::1::::<><>::uid://ujkhsk5kd8n6::::res://art/player sprites.png<>res://player/player.gd
+::res://scenes/::1705114158
 follow_cam.gd::GDScript::-1::1704836605::0::1::::<>Camera2D<>::
-world.tscn::PackedScene::6092107890939537152::1705005765::0::1::::<><>::uid://b62mdt5xvi07m::::res://player/player.tscn<>uid://druc47rvi733a::::res://art/TilesetFloor.png<>uid://4d1gsc5ppsxc::::res://art/TilesetNature.png<>uid://cvwkmufpq38ib::::res://art/animatedFlower.png<>res://scenes/follow_cam.gd
+world.tscn::PackedScene::6092107890939537152::1705114158::0::1::::<><>::uid://b62mdt5xvi07m::::res://player/player.tscn<>uid://druc47rvi733a::::res://art/TilesetFloor.png<>uid://4d1gsc5ppsxc::::res://art/TilesetNature.png<>uid://cvwkmufpq38ib::::res://art/animatedFlower.png<>res://scenes/follow_cam.gd<>uid://d35nd0war33i7::::res://enemies/slime.tscn

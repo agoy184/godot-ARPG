@@ -40,8 +40,8 @@ func _physics_process(delta):
 		updateVelocity()
 	else:
 		playerChase()
-	move_and_slide()
-	updateAnimation()
+		move_and_slide()
+		updateAnimation()
 	
 
 func _on_detection_area_body_entered(body):
@@ -49,6 +49,8 @@ func _on_detection_area_body_entered(body):
 	player_chase = true
 	player.currentHealth -= 1
 	print_debug("Health: ", player.currentHealth)
+	if (player.currentHealth <= 0):
+		player.currentHealth = player.maxHealth
 	
 	
 func _on_detection_area_body_exited(body):

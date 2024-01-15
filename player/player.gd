@@ -3,7 +3,8 @@ extends CharacterBody2D
 @export var speed: int = 35
 @onready var animations = $AnimationPlayer
 
-var currentHealth: int = 3
+@export var maxHealth = 3
+@onready var currentHealth: int = maxHealth
 
 func handleInput():
 	var moveDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")

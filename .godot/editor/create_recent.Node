@@ -1,3 +1,7 @@
+CanvasLayer
+Sprite2D
+Panel
+HBoxContainer
 CollisionShape2D
 Area2D
 Node

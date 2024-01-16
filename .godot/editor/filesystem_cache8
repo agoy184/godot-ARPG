@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705301254
+::res://::1705377533
 icon.svg::CompressedTexture2D::7294379042897127166::1704598921::1704670977::1::::<><>::
 ::res://art/::1705301254
 animatedFlower.png::CompressedTexture2D::6292853052723797269::1704767215::1704767215::1::::<><>::
@@ -8,14 +8,15 @@ player sprites.png::CompressedTexture2D::1422976905277113941::1704669392::170467
 Slime.png::CompressedTexture2D::1671545072437499954::1705008555::1705008556::1::::<><>::
 TilesetFloor.png::CompressedTexture2D::8393934877990829448::1704751981::1704751985::1::::<><>::
 TilesetNature.png::CompressedTexture2D::2043259905234106240::1704751981::1704751985::1::::<><>::
-::res://enemies/::1705301254
+::res://enemies/::1705301792
 slime.gd::GDScript::-1::1705301161::0::1::::<>CharacterBody2D<>::
-slime.tscn::PackedScene::9187277030946983568::1705299633::0::1::::<><>::res://enemies/slime.gd<>uid://x2ydrhkwrwwg::::res://art/Slime.png
-::res://gui/::1705301161
-heartContainer.tscn::PackedScene::6992606349152346452::1705301161::0::1::::<><>::
-::res://player/::1705299633
+slime.tscn::PackedScene::9187277030946983568::1705301792::0::1::::<><>::res://enemies/slime.gd<>uid://x2ydrhkwrwwg::::res://art/Slime.png
+::res://gui/::1705301792
+heart.tscn::PackedScene::1657546680592041646::1705301792::0::1::::<><>::uid://dnp8e88knehf7::::res://art/Heart.png
+heartContainer.tscn::PackedScene::6992606349152346452::1705301792::0::1::::<><>::uid://xu6s0ynphk3g::::res://gui/heart.tscn
+::res://player/::1705301792
 player.gd::GDScript::-1::1705299569::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4618748042487838624::1705299633::0::1::::<><>::uid://ujkhsk5kd8n6::::res://art/player sprites.png<>res://player/player.gd
-::res://scenes/::1705299633
+player.tscn::PackedScene::4618748042487838624::1705301792::0::1::::<><>::uid://ujkhsk5kd8n6::::res://art/player sprites.png<>res://player/player.gd
+::res://scenes/::1705301792
 follow_cam.gd::GDScript::-1::1704836605::0::1::::<>Camera2D<>::
-world.tscn::PackedScene::6092107890939537152::1705299633::0::1::::<><>::uid://b62mdt5xvi07m::::res://player/player.tscn<>uid://druc47rvi733a::::res://art/TilesetFloor.png<>uid://4d1gsc5ppsxc::::res://art/TilesetNature.png<>uid://cvwkmufpq38ib::::res://art/animatedFlower.png<>res://scenes/follow_cam.gd<>uid://d35nd0war33i7::::res://enemies/slime.tscn
+world.tscn::PackedScene::6092107890939537152::1705301792::0::1::::<><>::uid://b62mdt5xvi07m::::res://player/player.tscn<>uid://druc47rvi733a::::res://art/TilesetFloor.png<>uid://4d1gsc5ppsxc::::res://art/TilesetNature.png<>uid://cvwkmufpq38ib::::res://art/animatedFlower.png<>res://scenes/follow_cam.gd<>uid://d35nd0war33i7::::res://enemies/slime.tscn<>uid://c6vjg7548mto3::::res://gui/heartContainer.tscn

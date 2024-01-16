@@ -1,7 +1,7 @@
 res://scenes/world.tscn
-res://enemies/slime.gd
 res://player/player.tscn
 res://enemies/slime.tscn
-res://player/player.gd
-res://gui/heart.tscn
 res://gui/heartContainer.tscn
+res://gui/heart.tscn
+res://gui/heartContainer.gd
+res://scenes/world.gd

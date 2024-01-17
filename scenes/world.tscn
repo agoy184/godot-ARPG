@@ -2928,6 +2928,10 @@ position = Vector2(26, 24)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartContainer" parent="CanvasLayer" instance=ExtResource("7_lkuli")]
-offset_left = -52.0
-offset_right = 0.0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_right = 52.0
 offset_bottom = 13.0
+grow_horizontal = 1

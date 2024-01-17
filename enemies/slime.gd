@@ -48,6 +48,7 @@ func _on_detection_area_body_entered(body):
 	player = body
 	player_chase = true
 	player.currentHealth -= 1
+	player.healthChanged.emit(player.currentHealth)
 	print_debug("Health: ", player.currentHealth)
 	if (player.currentHealth <= 0):
 		player.currentHealth = player.maxHealth

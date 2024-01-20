@@ -1,9 +1,9 @@
-CanvasLayer
 Sprite2D
-Panel
-HBoxContainer
 CollisionShape2D
 Area2D
+CanvasLayer
+Panel
+HBoxContainer
 Node
 Marker2D
 AnimatedSprite2D

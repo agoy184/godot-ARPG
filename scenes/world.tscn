@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cs2cekxriwvxo"]
+[gd_scene load_steps=15 format=3 uid="uid://cs2cekxriwvxo"]
 
 [ext_resource type="Script" path="res://scenes/world.gd" id="1_18pc7"]
 [ext_resource type="PackedScene" uid="uid://b62mdt5xvi07m" path="res://player/player.tscn" id="1_wqv24"]
 [ext_resource type="Texture2D" uid="uid://druc47rvi733a" path="res://art/TilesetFloor.png" id="2_ixxy3"]
 [ext_resource type="Texture2D" uid="uid://4d1gsc5ppsxc" path="res://art/TilesetNature.png" id="3_kjy0x"]
 [ext_resource type="Texture2D" uid="uid://cvwkmufpq38ib" path="res://art/animatedFlower.png" id="4_ea7dc"]
+[ext_resource type="PackedScene" uid="uid://dn126tawt4vnk" path="res://collectables/lifepot.tscn" id="4_vd2yl"]
 [ext_resource type="Script" path="res://scenes/follow_cam.gd" id="5_7ffor"]
 [ext_resource type="PackedScene" uid="uid://d35nd0war33i7" path="res://enemies/slime.tscn" id="6_3580v"]
 [ext_resource type="PackedScene" uid="uid://c6vjg7548mto3" path="res://gui/heartContainer.tscn" id="7_lkuli"]
@@ -2859,6 +2860,10 @@ texture = ExtResource("3_kjy0x")
 11:20/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:20/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_lep7s"]
+resource_name = "Collectibles"
+scenes/2/scene = ExtResource("4_vd2yl")
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_046a6"]
 texture = ExtResource("4_ea7dc")
 0:0/animation_frame_0/duration = 0.3
@@ -2882,6 +2887,7 @@ terrain_set_0/terrain_2/color = Color(0.560784, 0.333333, 0.839216, 1)
 sources/0 = SubResource("TileSetAtlasSource_ndxrg")
 sources/1 = SubResource("TileSetAtlasSource_elsrh")
 sources/3 = SubResource("TileSetAtlasSource_046a6")
+sources/2 = SubResource("TileSetScenesCollectionSource_lep7s")
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
@@ -2901,6 +2907,8 @@ layer_2/name = "trees"
 layer_2/y_sort_enabled = true
 layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(131076, 1, 0)
+layer_3/name = "collectables"
+layer_3/tile_data = PackedInt32Array(327687, 2, 131072, 262152, 2, 131072)
 
 [node name="player" parent="TileMap" groups=["Player"] instance=ExtResource("1_wqv24")]
 position = Vector2(-30, -6)

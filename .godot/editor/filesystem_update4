@@ -5,5 +5,3 @@ res://gui/heartContainer.tscn
 res://gui/heart.tscn
 res://collectables/collectable.tscn
 res://collectables/lifepot.tscn
-res://player/player.gd
-res://enemies/slime.gd

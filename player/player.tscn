@@ -103,6 +103,7 @@ _data = {
 size = Vector2(15, 3.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pve87"]
+radius = 12.0
 
 [node name="player" type="CharacterBody2D"]
 z_index = 1

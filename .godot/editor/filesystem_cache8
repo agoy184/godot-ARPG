@@ -1,8 +1,8 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706167336
+3acdcc5cb6df755358dde907981ccea8
+::res://::1706216057
 default_env.tres::Environment::-1::1706166988::0::1::::<><>::
 icon.svg::CompressedTexture2D::7294379042897127166::1704598921::1704670977::1::::<><>::
-main.dialogue::Resource::448689811877313096::1706167336::1706167336::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+main.dialogue::Resource::448689811877313096::1706216181::1706216181::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 README.md::TextFile::-1::1706166987::0::1::::<><>::
 ::res://addons/::1706167094
 ::res://addons/dialogue_manager/::1706167095
@@ -68,13 +68,13 @@ player sprites.png::CompressedTexture2D::1422976905277113941::1704669392::170467
 Slime.png::CompressedTexture2D::1671545072437499954::1705008555::1705008556::1::::<><>::
 TilesetFloor.png::CompressedTexture2D::8393934877990829448::1704751981::1704751985::1::::<><>::
 TilesetNature.png::CompressedTexture2D::2043259905234106240::1704751981::1704751985::1::::<><>::
-::res://collectables/::1706167236
+::res://collectables/::1706216060
 Collectable.gd::GDScript::-1::1705736652::0::1::::<>Area2D<>::
-collectable.tscn::PackedScene::6018582344232290785::1706167236::0::1::::<><>::res://collectables/Collectable.gd
-lifepot.tscn::PackedScene::8127086557364811632::1706167236::0::1::::<><>::uid://cr0pf3xyjgdgj::::res://collectables/collectable.tscn<>uid://detvk7i2clqwk::::res://art/LifePot.png
-::res://enemies/::1706167236
-slime.gd::GDScript::-1::1705478800::0::1::::<>CharacterBody2D<>::
-slime.tscn::PackedScene::9187277030946983568::1706167236::0::1::::<><>::res://enemies/slime.gd<>uid://x2ydrhkwrwwg::::res://art/Slime.png
+collectable.tscn::PackedScene::6018582344232290785::1706216060::0::1::::<><>::res://collectables/Collectable.gd
+lifepot.tscn::PackedScene::8127086557364811632::1706216060::0::1::::<><>::uid://cr0pf3xyjgdgj::::res://collectables/collectable.tscn<>uid://detvk7i2clqwk::::res://art/LifePot.png
+::res://enemies/::1706216060
+slime.gd::GDScript::-1::1706167887::0::1::::<>CharacterBody2D<>::
+slime.tscn::PackedScene::9187277030946983568::1706216060::0::1::::<><>::res://enemies/slime.gd<>uid://x2ydrhkwrwwg::::res://art/Slime.png
 ::res://examples/::1706166988
 Characters.tres::Resource/Resource::7778104419182407793::1706166988::0::1::::<><>::res://addons/dialogue_nodes/objects/CharacterList.gd<>res://addons/dialogue_nodes/objects/Character.gd<>uid://b2hbqv3slgfxt::::res://examples/profile0.png
 demo.gd::GDScript::-1::1706166988::0::1::::<>Control<>::
@@ -87,15 +87,15 @@ ExampleCharacters.tres::Resource/Resource::6791467534754624381::1706166988::0::1
 ExampleSignals.tres::Resource/Resource::4451938646115500077::1706166988::0::1::::<><>::res://addons/dialogue_nodes/objects/DialogueData.gd
 ExampleVariables.tres::Resource/Resource::4886097951687637358::1706166988::0::1::::<><>::res://addons/dialogue_nodes/objects/DialogueData.gd
 profile0.png::CompressedTexture2D::4296060542971295061::1706166988::1706166988::1::::<><>::
-::res://gui/::1706167236
+::res://gui/::1706216060
 heart.gd::GDScript::-1::1705478268::0::1::::<>Panel<>::
-heart.tscn::PackedScene::1657546680592041646::1706167236::0::1::::<><>::res://gui/heart.gd<>uid://dnp8e88knehf7::::res://art/Heart.png
+heart.tscn::PackedScene::1657546680592041646::1706216060::0::1::::<><>::res://gui/heart.gd<>uid://dnp8e88knehf7::::res://art/Heart.png
 heartContainer.gd::GDScript::-1::1705478478::0::1::::<>HBoxContainer<>::
-heartContainer.tscn::PackedScene::6992606349152346452::1706167236::0::1::::<><>::uid://xu6s0ynphk3g::::res://gui/heart.tscn<>res://gui/heartContainer.gd
-::res://player/::1706167236
-player.gd::GDScript::-1::1705736149::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4618748042487838624::1706167236::0::1::::<><>::uid://ujkhsk5kd8n6::::res://art/player sprites.png<>res://player/player.gd
-::res://scenes/::1706167236
+heartContainer.tscn::PackedScene::6992606349152346452::1706216060::0::1::::<><>::uid://xu6s0ynphk3g::::res://gui/heart.tscn<>res://gui/heartContainer.gd
+::res://player/::1706216060
+player.gd::GDScript::-1::1706167977::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4618748042487838624::1706216060::0::1::::<><>::uid://ujkhsk5kd8n6::::res://art/player sprites.png<>res://player/player.gd
+::res://scenes/::1706216060
 follow_cam.gd::GDScript::-1::1704836605::0::1::::<>Camera2D<>::
 world.gd::GDScript::-1::1705479099::0::1::::<>Node2D<>::
-world.tscn::PackedScene::6092107890939537152::1706167236::0::1::::<><>::res://scenes/world.gd<>uid://b62mdt5xvi07m::::res://player/player.tscn<>uid://druc47rvi733a::::res://art/TilesetFloor.png<>uid://4d1gsc5ppsxc::::res://art/TilesetNature.png<>uid://cvwkmufpq38ib::::res://art/animatedFlower.png<>uid://dn126tawt4vnk::::res://collectables/lifepot.tscn<>res://scenes/follow_cam.gd<>uid://d35nd0war33i7::::res://enemies/slime.tscn<>uid://c6vjg7548mto3::::res://gui/heartContainer.tscn
+world.tscn::PackedScene::6092107890939537152::1706216060::0::1::::<><>::res://scenes/world.gd<>uid://b62mdt5xvi07m::::res://player/player.tscn<>uid://druc47rvi733a::::res://art/TilesetFloor.png<>uid://4d1gsc5ppsxc::::res://art/TilesetNature.png<>uid://cvwkmufpq38ib::::res://art/animatedFlower.png<>uid://dn126tawt4vnk::::res://collectables/lifepot.tscn<>res://scenes/follow_cam.gd<>uid://d35nd0war33i7::::res://enemies/slime.tscn<>uid://c6vjg7548mto3::::res://gui/heartContainer.tscn

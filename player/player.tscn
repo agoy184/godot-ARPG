@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b62mdt5xvi07m"]
+[gd_scene load_steps=11 format=3 uid="uid://b62mdt5xvi07m"]
 
 [ext_resource type="Texture2D" uid="uid://ujkhsk5kd8n6" path="res://art/player sprites.png" id="1_p305f"]
 [ext_resource type="Script" path="res://player/player.gd" id="1_sf1yq"]
@@ -102,6 +102,8 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_juc8g"]
 size = Vector2(15, 3.5)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_pve87"]
+
 [node name="player" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -123,3 +125,12 @@ libraries = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(124.5, 57.75)
 shape = SubResource("RectangleShape2D_juc8g")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(124, 53)
+shape = SubResource("CircleShape2D_pve87")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

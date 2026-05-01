@@ -1,7 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b62mdt5xvi07m"]
+[gd_scene format=3 uid="uid://b62mdt5xvi07m"]
 
 [ext_resource type="Texture2D" uid="uid://ujkhsk5kd8n6" path="res://art/player sprites.png" id="1_p305f"]
-[ext_resource type="Script" path="res://player/player.gd" id="1_sf1yq"]
+[ext_resource type="Script" uid="uid://423hm43lmpv1" path="res://player/player.gd" id="1_sf1yq"]
 
 [sub_resource type="Animation" id="Animation_nyw7a"]
 length = 0.001
@@ -92,11 +92,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6u16e"]
 _data = {
-"RESET": SubResource("Animation_nyw7a"),
-"walkDown": SubResource("Animation_pux3g"),
-"walkLeft": SubResource("Animation_ps1h7"),
-"walkRight": SubResource("Animation_cfm7d"),
-"walkUp": SubResource("Animation_t2wp4")
+&"RESET": SubResource("Animation_nyw7a"),
+&"walkDown": SubResource("Animation_pux3g"),
+&"walkLeft": SubResource("Animation_ps1h7"),
+&"walkRight": SubResource("Animation_cfm7d"),
+&"walkUp": SubResource("Animation_t2wp4")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_juc8g"]
@@ -105,31 +105,29 @@ size = Vector2(15, 3.5)
 [sub_resource type="CircleShape2D" id="CircleShape2D_pve87"]
 radius = 12.0
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" unique_id=331221954]
 z_index = 1
 y_sort_enabled = true
 texture_filter = 1
 script = ExtResource("1_sf1yq")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1532365547]
 position = Vector2(124, 60)
 texture = ExtResource("1_p305f")
 offset = Vector2(2.08165e-12, -8)
 hframes = 4
 vframes = 7
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_6u16e")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2006488443]
+libraries/ = SubResource("AnimationLibrary_6u16e")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1392206552]
 position = Vector2(124.5, 57.75)
 shape = SubResource("RectangleShape2D_juc8g")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=1138879326]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=870537611]
 position = Vector2(124, 53)
 shape = SubResource("CircleShape2D_pve87")
 

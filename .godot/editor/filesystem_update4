@@ -1,7 +1,1 @@
-res://scenes/world.tscn
 res://player/player.tscn
-res://enemies/slime.tscn
-res://gui/heartContainer.tscn
-res://gui/heart.tscn
-res://collectables/collectable.tscn
-res://collectables/lifepot.tscn
